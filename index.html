@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body class="relative text-gray-950 scroll-smooth">
+  <!-- chat  button -->
+  <!-- <div class="fixed bottom-4 z-50 right-4 "><button class="bg-slate-900/30 p-2 backdrop-blur-sm rounded-full"><svg
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-16 text-white">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+      </svg>
+    </button></div> -->
+
+
+  <!-- header section -->
+  <header class="bg-slate-200 sticky top-0 z-50">
+    <div class="container  mx-auto px-14 py-2 flex justify-between items-center">
+      <div class="relative flex items-center">
+        <input type="text" placeholder="Search"
+          class="border-b bg-transparent focus:outline-none focus:border-[#304463] ms-8">
+        <button class="absolute left-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul class="flex justify-center items-center space-x-4">
+
+          <li class="relative flex items-center justify-center pe-8"><button class="absolute left-0"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+            </button><a href="#" class="ms-7 hidden sm:flex">Log-in</a></li>
+          <li class="relative flex items-center justify-center"><button class="absolute left-0"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+            </button><a href="#" class="ms-7 hidden sm:flex">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="flex space-x-8">
+
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <!-- nav -->
+  <header class="bg-[#F2D1D1] shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 md:px-0 lg:px-14 py-5 flex justify-between items-center">
+      <div class="transition-all duration-300 ease hover:scale-125 tracking-wider">
+        <a href="#" class="font-bold text-2xl text-[#304463] ">FEMINGO</a>
+      </div>
+
+      <nav class="hidden lg:flex">
+        <ul class="flex space-x-8">
+          <li><a href="#" class="text-slate-950 hover:text-[#304463]">Home</a></li>
+          <li><a href="#featuredCollections" class="text-slate-950 hover:text-[#304463]">Collections</a></li>
+          <li><a href="#aboutus" class="text-slate-950 hover:text-[#304463]">About</a></li>
+          <li><a href="#reviews" class="text-slate-950 hover:text-[#304463]">Reviews</a></li>
+          <li><a href="#lookBook" class="text-slate-950 hover:text-[#304463]">LookBook</a></li>
+          <li><a href="#faq" class="text-slate-950 hover:text-[#304463]">FAQ</a></li>
+          <li><a href="#contact" class="text-slate-950 hover:text-[#304463]">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hidden lg:flex">
+        <a href="#"
+          class="px-6 py-2 rounded font-semibold text-white bg-[#304463] transition-colors  duration-300 ease-in-out hover:bg-slate-800">Shop</a>
+      </div>
+      <div class="flex lg:hidden">
+        <button id="menu-toggle">
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+        </button>
+      </div>
+
+
+
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1]">
+      <a href="#home" class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">Home</a>
+      <a href="#featuredCollections"
+        class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">Collections</a>
+      <a href="#aboutus" class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">About</a>
+      <a href="#reviews"
+        class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">Reviews</a>
+      <a href="#lookBook"
+        class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">LookBook</a>
+      <a href="#faq" class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">FAQ</a>
+      <a href="#contact"
+        class="block px-4 py-2 hover:bg-slate-200 transition-colors duration-300 ease-in-out">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative md:my-6">
+    <div
+      class="container mx-auto md:h-[32rem] h-[24rem] lg:bg-fixed bg-contain bg-no-repeat bg-center flex items-center justify-center"
+      style="background-image: url(/images/7.jpeg);">
+      <div class="flex items-center flex-col">
+        <h1 class="text-lg font-['Proxima Nova'] text-center font-bold text-white backdrop-blur-sm bg-white/30 p-2">
+          FEMINGO/Elegance - 2025
+        </h1>
+        <button class="animate-bounce mt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-11 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- featured collections section -->
+  <section id="featuredCollections" class="py-8">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">FEATURED COLLECTIONS</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div
+      class="container mx-auto 2xl:px-14 md:px-8 px-4 my-6 flex items-center justify-center lg:justify-between gap-8 flex-wrap lg:flex-nowrap">
+      <div class="relative group overflow-hidden shadow-lg">
+        <img src="/images/2.jpeg" alt=""
+          class="lg:w-[20rem] w-[16rem] transform transition-transform duration-300 ease-in-out brightness-100 group-hover:brightness-75 group-hover:scale-150">
+        <div
+          class="absolute inset-0 flex items-center justify-center flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center">
+
+          <p class="text-white text-lg mb-40 xl:mb-48 lg:mb-32">2025 - Rings</p>
+          <h1 class="xl:text-2xl md:text-xl font-semibold text-white">Minimalist Charm</h1>
+          <p class="text-white text-base lg:text-sm xl:text-base">Simple yet elegant jewelry.</p>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden shadow-lg">
+        <img src="/images/bracelet.jpeg" alt=""
+          class="lg:w-[20rem] w-[16rem] transform transition-transform duration-300 ease-in-out brightness-100 group-hover:brightness-75 group-hover:scale-150">
+        <div
+          class="absolute inset-0 flex items-center justify-center flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center">
+          <p class="text-white text-lg mb-40 xl:mb-48 lg:mb-32">2025 - Bracelets</p>
+          <h1 class="xl:text-2xl md:text-xl font-semibold text-white">Statement Pieces</h1>
+          <p class="text-white text-base lg:text-sm xl:text-base">Bold designs for special moments.</p>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden shadow-lg">
+        <img src="/images/chain.jpeg" alt=""
+          class="lg:w-[20rem] w-[16rem] transform transition-transform duration-300 ease-in-out brightness-100 group-hover:brightness-75 group-hover:scale-150">
+        <div
+          class="absolute inset-0 flex items-center justify-center flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center">
+
+
+          <p class="text-white text-lg mb-40 xl:mb-48 lg:mb-32">2025 - Necklaces</p>
+          <h1 class="xl:text-2xl md:text-xl font-semibold text-white">Everyday Elegance</h1>
+          <p class="text-white text-base lg:text-sm xl:text-base">Stylish pieces for daily wear.</p>
+        </div>
+      </div>
+      <div class="relative group overflow-hidden shadow-lg">
+        <img src="/images/earring.jpeg" alt=""
+          class="lg:w-[20rem] w-[16rem] transform transition-transform duration-300 ease-in-out brightness-100 group-hover:brightness-75 group-hover:scale-150">
+        <div
+          class="absolute inset-0 flex items-center justify-center flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out text-center">
+
+
+          <p class="text-white text-lg mb-40 xl:mb-48 lg:mb-32">2025 - Earrings</p>
+          <h1 class="xl:text-2xl md:text-xl font-semibold text-white">Elegant Earrings</h1>
+          <p class="text-white text-base lg:text-sm xl:text-base">Chic designs for every occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- best seller section -->
+  <section id="bestSeller" class="py-16 bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1]">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">BEST SELLERS</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div
+      class="container mx-auto px-14 lg:px-32 grid lg:grid-rows-2 lg:grid-cols-4 grid-rows-2 grid-cols-2 my-10 gap-4">
+      <div class="lg:row-span-2 lg:col-span-2 relative group shadow-lg"><img src="/images/best seller-necklace.jpeg"
+          alt="" class="bg-contain bg-no-repeat ">
+        <div class="absolute inset-0 flex flex-col justify-start items-center sm:items-start text-white xl:m-4 m-2">
+          <h2 class="xl:text-2xl sm:text-lg text-base font-bold">Chic Charm</h2>
+          <p class="xl:text-xl sm:text-base text-sm">4499</p>
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col justify-end items-center transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 w-full font-semibold text-base sm:text-xl text-white py-1 sm:py-2">Add</button>
+        </div>
+
+      </div>
+      <div class="relative group shadow-lg"><img src="/images/best seller ring-2.jpeg" alt=""
+          class="bg-contain bg-no-repeat">
+        <div class="absolute inset-0 flex flex-col justify-start items-center sm:items-start text-white xl:m-4 m-2">
+          <h2 class="xl:text-2xl sm:text-lg text-base font-bold">Radiance Solitaire</h2>
+          <p class="xl:text-xl sm:text-base text-sm">3,299</p>
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col justify-end items-center transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 w-full font-semibold text-base sm:text-xl text-white py-1 sm:py-2">Add</button>
+        </div>
+      </div>
+      <div class="relative group shadow-lg "><img src="/images/best seller-earring.jpeg" alt=""
+          class="bg-contain bg-no-repeat">
+        <div class="absolute inset-0 flex flex-col justify-start items-center sm:items-start text-white xl:m-4 m-2">
+          <h2 class="xl:text-2xl sm:text-lg text-base font-bold">Gleam Drop</h2>
+          <p class="xl:text-lg sm:text-base text-sm">2099</p>
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col justify-end items-center transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 w-full font-semibold text-base sm:text-xl text-white py-1 sm:py-2">Add</button>
+        </div>
+      </div>
+      <div class="hidden lg:grid relative group shadow-lg"><img src="/images/best seller-necklace2.jpeg" alt=""
+          class="bg-contain bg-no-repeat">
+        <div class="absolute inset-0 flex flex-col justify-start items-center sm:items-start text-white xl:m-4 m-2">
+          <h2 class="xl:text-2xl sm:text-lg text-base font-bold">Elegant Edge</h2>
+          <p class="xl:text-xl sm:text-base text-sm">2499</p>
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col justify-end items-center transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 w-full font-semibold text-base sm:text-xl text-white py-1 sm:py-2">Add</button>
+        </div>
+      </div>
+      <div class="relative group shadow-lg"><img src="/images/best seller-bracelet.jpeg" alt=""
+          class="bg-contain bg-no-repeat">
+        <div class="absolute inset-0 flex flex-col justify-start items-center sm:items-start text-white xl:m-4 m-2">
+          <h2 class="xl:text-2xl sm:text-lg text-base font-bold">Luxe Link</h2>
+          <p class="xl:text-xl sm:text-base text-sm">2899</p>
+        </div>
+        <div
+          class="absolute inset-0 flex flex-col justify-end items-center transform transition-all duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 w-full font-semibold text-base sm:text-xl text-white py-1 sm:py-2">Add</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- New Arrivals section -->
+  <section id="newArrivals" class="py-10 xl:py-16">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">NEW ARRIVALS</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div
+      class="container mx-auto xl:px-44 px-8 md:px-2 sm:px-1 lg:px-14 flex md:justify-center items-center lg:gap-14 gap-4 md:gap-7 py-10 overflow-x-auto scrollbar-hide">
+      <div class="min-w-[200px] group text-center shadow-lg">
+        <div class="relative overflow-hidden"><img src="/images/new-1.jpeg" alt=""
+            class="bg-contain bg-no-repeat xl:w-[20rem] transform transition-transform group-hover:scale-150">
+          <div class="absolute inset-0 flex items-end justify-center mb-8">
+            <button type="submit"
+              class="opacity-0 group-hover:opacity-100 bg-[#304463] text-white px-6 py-2 rounded font-semibold transition-all  duration-300 ease-in-out hover:bg-slate-800">Quick
+              Add</button>
+          </div>
+        </div>
+        <div class="py-4">
+          <h2 class="text-xl font-semibold">Gleaming Nova</h2>
+          <p>1899</p>
+        </div>
+      </div>
+      <div class="min-w-[200px] group text-center shadow-lg">
+        <div class="relative overflow-hidden"><img src="/images/new-2.jpeg" alt=""
+            class="bg-contain bg-no-repeat xl:w-[20rem] transform transition-transform group-hover:scale-150">
+          <div class="absolute inset-0 flex items-end justify-center mb-8">
+            <button type="submit"
+              class="opacity-0 group-hover:opacity-100 bg-[#304463] text-white p-2 sm:px-6 sm:py-2 rounded font-semibold transition-all  duration-300 ease-in-out hover:bg-slate-800">Quick
+              Add</button>
+          </div>
+        </div>
+        <div class="py-4">
+          <h2 class="text-xl font-semibold">Twilight Sparkle</h2>
+          <p>3899</p>
+        </div>
+      </div>
+      <div class="min-w-[200px] group text-center shadow-lg">
+        <div class="relative overflow-hidden"><img src="/images/new-3.jpeg" alt=""
+            class="bg-contain bg-no-repeat xl:w-[20rem] transform transition-transform group-hover:scale-150">
+          <div class="absolute inset-0 flex items-end justify-center mb-8">
+            <button type="submit"
+              class="opacity-0 group-hover:opacity-100 bg-[#304463] text-white px-6 py-2 rounded font-semibold transition-all  duration-300 ease-in-out hover:bg-slate-800">Quick
+              Add</button>
+          </div>
+        </div>
+        <div class="py-4">
+          <h2 class="text-xl font-semibold">Celestial Charm</h2>
+          <p>4299</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- aboutus section -->
+  <section id="aboutus" class="py-8">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">ABOUT US</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div class="container mx-auto xl:px-60 px-8 text-sm md:text-lg text-center my-6">
+      <p>At Femingo, we create elegant and empowering jewelry designed to celebrate your unique style. Combining
+        timeless craftsmanship with modern designs, our pieces are made to inspire confidence and beauty for every
+        occasion.
+        <br><br>
+        We believe every woman deserves to feel special, which is why our collections feature a variety of high-quality,
+        versatile designs to suit every personality and moment. Whether it's a gift for someone you love or a treat for
+        yourself, Femingo is here to make every occasion sparkle.
+        <br><br>
+        Our mission is simple: to bring elegance, confidence, and joy to your life. Choose Femingo and let your style
+        tell your story.
+      </p>
+    </div>
+    <div class="container mx-auto px-14 bg-fixed bg-cover h-24" style="background-image: url(/images/about-3.jpeg);">
+    </div>
+  </section>
+
+
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-16 bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1]">
+    <div class="container mx-auto px-14">
+      <div class="flex items-center justify-center gap-4">
+        <div class="h-px flex-1 bg-gray-400"></div>
+        <h2 class="text-center text-xl font-semibold">WHAT OUR CUSTOMERS SAY</h2>
+        <div class="h-px flex-1 bg-gray-400"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <p class="text-gray-600">"I absolutely love Femingo's jewelry collection! The designs are unique, elegant, and
+            perfect for every occasion. Definitely a must-buy!"</p>
+          <p class="text-right font-bold mt-4">- Sarah J.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <p class="text-gray-600">"Femingo's products exceeded my expectations. The quality is excellent, and the
+            packaging was so beautiful! I’ll shop again soon."</p>
+          <p class="text-right font-bold mt-4">- Emily R.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <p class="text-gray-600">"Stylish and affordable! Femingo offers gorgeous jewelry that looks luxurious. I
+            received so many compliments. Highly recommend them!"</p>
+          <p class="text-right font-bold mt-4">- judi N.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Style Guide/Lookbook -->
+  <section id="lookBook" class="py-16">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">STYLE GUIDE</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div class=" container mx-auto px-14 grid grid-cols-1 md:grid-cols-2 gap-8 text-center py-10">
+      <!-- Styled Look -->
+      <div
+        class="relative bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1] p-6 rounded-lg shadow-lg group overflow-hidden">
+        <img src="/images/style-1.jpeg" alt="Styled Look"
+          class="w-full rounded-lg mb-4 bg-contain bg-no-repeat transform transition-transform duration-300 ease-in-out xl:group-hover:scale-[1.7] lg:group-hover:scale-[2] md:group-hover:scale-[2.7] sm:group-hover:scale-[1.8] group-hover:scale-[3]">
+        <div
+          class="absolute inset-0 flex justify-between items-center flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out ">
+          <div class="xl:mt-16">
+            <h2 class="text-white font-semibold text-2xl">Grace Ensemble</h2>
+            <p class="text-white font-semibold text-lg">Sleek Sophistication for Every day</p>
+          </div>
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 py-3 w-full text-white font-semibold text-xl">View
+            the
+            Pair</button>
+        </div>
+        <h3 class="text-lg font-bold">Elegant Office Wear</h3>
+        <p class="text-gray-600 mt-2">Pair subtle jewelry with professional outfits.</p>
+      </div>
+      <div
+        class="relative bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1] p-6 rounded-lg shadow-lg group overflow-hidden">
+        <img src="/images/style-2.jpeg" alt="Styled Look"
+          class="w-full rounded-lg mb-4 bg-contain bg-no-repeat transform transition-transform duration-300 ease-in-out xl:group-hover:scale-[1.7] lg:group-hover:scale-[2] md:group-hover:scale-[2.7] sm:group-hover:scale-[1.8] group-hover:scale-[3]">
+        <div
+          class="absolute inset-0 flex justify-between items-center flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out ">
+          <div class="xl:mt-16">
+            <h2 class="text-white font-semibold text-2xl">Viva Charm</h2>
+            <p class="text-white font-semibold text-lg">Modern Flair with Casual Grace</p>
+          </div>
+          <button
+            class="bg-[#304463] transition-colors duration-300 ease-in-out hover:bg-slate-800 py-3 w-full text-white font-semibold text-xl">View
+            the
+            Pair</button>
+        </div>
+        <h3 class="text-lg font-bold">Chic Casual</h3>
+        <p class="text-gray-600 mt-2">Effortless looks with delicate pieces.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- gift section -->
+  <section id="gift" class="bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1] my-8">
+
+    <div class="relative mx-auto grid lg:grid-cols-2 grid-cols-1">
+      <div class="lg:flex flex-col justify-center items-center text-center px-12 2xl:px-24 py-10 hidden">
+        <div class="container mx-auto  flex items-center justify-center gap-4 mb-3">
+          <div class="h-px flex-1 bg-gray-400"></div>
+          <h2 class="text-center text-xl font-semibold">PERFECT GIFTS FOR EVERY OCCASION</h2>
+          <div class="h-px flex-1 bg-gray-400"></div>
+        </div>
+        <p class="text-gray-600 mb-6">Surprise your loved ones with our elegant gift collection,
+          beautifully packaged for every special moment.</p>
+        <button type="submit"
+          class="bg-[#304463] text-white px-6 py-3 rounded font-semibold transition-colors  duration-300 ease-in-out hover:bg-slate-800">Shop
+          Gifts</button>
+      </div>
+      <div
+        class="absolute inset-0 z-40 flex flex-col justify-center items-center text-center px-8 sm:px-12 2xl:px-24 py-10 visible lg:invisible bg-cover">
+        <div class="container mx-auto  flex items-center justify-center gap-4 mb-3">
+          <div class="h-px flex-1 bg-gray-400"></div>
+          <h2 class="text-center text-lg sm:text-xl font-semibold text-white">PERFECT GIFTS FOR EVERY OCCASION</h2>
+          <div class="h-px flex-1 bg-gray-400"></div>
+        </div>
+        <p class=" mb-6 text-white text-sm sm:text-base">Surprise your loved ones with our elegant gift collection,
+          beautifully packaged for every special moment.</p>
+        <button type="submit"
+          class="bg-[#304463] text-white px-6 py-3 rounded font-semibold transition-colors  duration-300 ease-in-out hover:bg-slate-800">Shop
+          Gifts</button>
+      </div>
+      <div class="lg:bg-cover bg-contain bg-no-repeat w-full" style="background-image: url(/images/gift-9.jpeg);">
+        <img class="lg:hidden brightness-50" src="/images/gift-9.jpeg" alt="">
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- subscribe section -->
+  <section id="subscribe" class="py-16">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">JOIN THE FEMINGO FAMILY</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div class="container mx-auto px-14 py-10 text-center">
+      <p class="text-gray-600 mb-6">Subscribe for exclusive offers and the latest updates!</p>
+      <form class="max-w-md mx-auto">
+        <input type="email" placeholder="Enter your email"
+          class="w-full px-4 py-2 rounded-lg mb-4 border border-gray-300">
+        <button type="submit"
+          class="bg-[#304463] text-white px-6 py-3 rounded font-semibold transition-all  duration-300 ease-in-out hover:bg-slate-800">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16 bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1]">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">FREQUENTLY ASKED QUESTIONS</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div class="container mx-auto px-14 py-10">
+      <div class="space-y-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-lg font-bold mb-2">What is your return policy?</h3>
+          <p class="text-gray-600">We offer a 30-day return policy on all our products.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-lg font-bold mb-2">Do you ship internationally?</h3>
+          <p class="text-gray-600">Yes, we ship to most countries worldwide.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-lg font-bold mb-2">Are the jewelry pieces hypoallergenic?</h3>
+          <p class="text-gray-600">Yes, our products are made from hypoallergenic materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-14 flex items-center justify-center gap-4">
+      <div class="h-px flex-1 bg-gray-400"></div>
+      <h2 class="text-center text-xl font-semibold">GET IN TOUCH</h2>
+      <div class="h-px flex-1 bg-gray-400"></div>
+    </div>
+    <div class="container mx-auto px-6 py-10">
+      <p class="text-gray-600 mb-4 text-center">Have questions? Reach out to us anytime!</p>
+      <form class="max-w-lg mx-auto bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1] rounded-lg shadow-lg p-6">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-600">Name</label>
+          <input type="text" id="name" class="w-full bg-gray-100 border-gray-300 rounded-lg shadow-sm p-2" />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-600">Email</label>
+          <input type="email" id="email"
+            class="w-full bg-gray-100 border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-pink-200 p-2" />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-600">Message</label>
+          <textarea id="message"
+            class="w-full bg-gray-100 border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-pink-200 p-2"></textarea>
+        </div>
+        <button type="submit"
+          class="px-6 py-2 bg-[#304463] text-white font-semibold rounded transition-all  duration-300 ease-in-out hover:bg-slate-800">Send
+          Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- footer section -->
+  <footer class="py-16 bg-gradient-to-tr from-[#C6DCE4]  to-[#F2D1D1]">
+    <div class="container mx-auto px-14 2xl:px-72 xl:px-40 lg:px-24">
+      <div class="flex justify-between flex-col md:flex-row">
+        <div class="mb-8 md:mb-0">
+          <a href="#"
+            class="font-bold text-2xl text-[#304463] transition-all duration-300 ease-in-out hover:scale-125 tracking-wider mb-7">FEMINGO</a>
+          <ul class="mt-4 text-slate-950 ">
+            <li class="hover:text-[#304463]">
+              <a href="#featuredCollections">Collections</a>
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#bestSeller">Best Sellers</a>
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#newArrivals">New Arrivals</a>
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#aboutus">About Us</a>
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#reviews">Reviews</a>
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#lookBook">Style Guide</a>
+
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#faq">FAQ</a>
+            </li>
+            <li class="hover:text-[#304463]">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="mb-8 md:mb-0 text-slate-950">
+          <h2 class="font-bold text-xl text-gray-600 mb-4">Visit Our Store</h2>
+          <p>719 White Road Street,<br>Adyar Chennai, Pin-600011.</p>
+          <p class="mt-2">22 church Street,<br>Thuckalay Kaniyakumari, Pin-629161.</p>
+        </div>
+        <div class="text-slate-950">
+          <h2 class=" font-bold text-xl text-gray-600 mb-4">Stay Connected</h2>
+          <ul>
+            <li class="hover:text-[#304463]"><a href="#">Instagram</a></li>
+            <li class="hover:text-[#304463]"><a href="#">Facebook</a></li>
+            <li class="hover:text-[#304463]"><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bg-slate-200">
+    <div class="container mx-auto px-14 py-2 text-center">
+      <p>&copy; 2025 Femingo. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+
+  <script>
+    // JavaScript for toggling the mobile menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
